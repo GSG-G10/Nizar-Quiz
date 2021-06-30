@@ -129,4 +129,5 @@ body {
     background-color: #FFE1D0;
     color: #E1560B;
     border: 3px solid #E1560B;
+    cursor: pointer;
 }
