@@ -9,8 +9,12 @@ This project to test your knowledge in history of Euro championes.
    
 3. I wrote a long html file, so in the future i'll just used object in JS to avoid this problem.
 
-#How to play
+# How to play
 just click on this link:
+https://gsg-g10.github.io/Nizar-Quiz/
+
+# Figma Link - Design 
+https://www.figma.com/file/AW68p5RkDb3mMPIZy7PFdS/Nizar-Quiz?node-id=0%3A1
 
 
 
