@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: sans-serif;
+    font-weight: 300;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #016473;
+    font-size: 24px;
+    color: #E1560B;
+}
+
+
+.first-page {
+    display: flex;
+    width: 1024px;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #82D0F4;
+    height: 624px;
+    padding: 20px;
+ 
+}
+
+.title-app {
+    font-size: 2em;
+    padding-bottom: 7.5px;
+    border-bottom: 3px solid #E1560B;
+}
+
+
+.description {
+    width: 500px;
+    text-align: center;
+    font-size: 1em;
+    line-height: 1.2em;
+}
+
+
+.start-play {
+    background-color: #FFE1D0;
+    border: 3px solid #E1560B;
+    border-radius: 20px;
+    padding: 7.5px;
+    font-size: 1em;
+    color:#af440a;
+    overflow: hidden;
+    cursor: pointer;
+}
