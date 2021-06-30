@@ -20,7 +20,7 @@
 
         <button class="start-play">Let's Play!</button>
 
-        <img src="/resources/UEFA-EURO-2020-removebg-preview.png" alt="logo" >
+        <img src="./resources/UEFA-EURO-2020-removebg-preview.png" alt="logo"  class= "logo">
 
     </section>
 
@@ -33,12 +33,12 @@
         </p>
 
         <label for="name" class="player">
-            <input class="player-name" type="text" id="name" value="write here">
+            <input class="player-name" type="text" id="name" value="write here" onchange="changeValue(this)">
         </label>
 
         <button class="next">Next</button>
 
-        <img src="/resources/UEFA-EURO-2020-removebg-preview.png" alt="logo" >
+        <img src="./resources/UEFA-EURO-2020-removebg-preview.png" alt="logo"  class= "logo">
 
     </section>
 
@@ -54,22 +54,26 @@
             <section class= "answer answer1">
     
                 <label for="three" class="option"> 
-                    <input id="three" type="radio" name="one-two-three-four" class="text-opt">
+                    <input id="three"  value ="three" type="radio" name="one-two-three-four" class="text-opt"
+                    onchange="checkChoose(this)" >
                     three years
                 </label>
         
                 <label for="two" class="option"> 
-                    <input id="two" type="radio" name="one-two-three-four" class="text-opt">
+                    <input id="two" value ="two" type="radio" name="one-two-three-four" class="text-opt"
+                    onchange="checkChoose(this)">
                     two years
                 </label>
         
                 <label for="one" class="option"> 
-                    <input id="one" type="radio" name="one-two-three-four" class="text-opt">
+                    <input id="one" value ="one" type="radio" name="one-two-three-four" class="text-opt"
+                    onchange="checkChoose(this)">
                     every year 
                 </label>
         
-                <label for="four" class="option"> 
-                    <input id="four" type="radio" name="one-two-three-four" class="text-opt">
+                <label for="four" value ="four" class="option"> 
+                    <input id="four" type="radio" name="one-two-three-four" class="text-opt correct"
+                    onchange="checkChoose(this)">
                     four years 
                 </label>
         
@@ -86,22 +90,26 @@
             <section class= "answer answer2">
     
                 <label for="Zidan" class="option"> 
-                    <input id="Zidan" type="radio" name="highscore" class="text-opt">
+                    <input id="Zidan" value ="zidan" type="radio" name="highscore" class="text-opt"
+                    onchange="checkChoose(this)">
                     Zidan
                 </label>
         
                 <label for="Ronaldo" class="option"> 
-                    <input id="Ronaldo" type="radio" name="highscore" class="text-opt">
+                    <input id="Ronaldo" value ="ronaldo" type="radio" name="highscore" class="text-opt correct"
+                    onchange="checkChoose(this)">
                     Ronaldo
                 </label>
         
                 <label for="Raul" class="option"> 
-                    <input id="Raul" type="radio" name="highscore" class="text-opt">
+                    <input id="Raul" value ="raul" type="radio" name="highscore" class="text-opt"
+                    onchange="checkChoose(this)">
                     Raul
                 </label>
         
                 <label for="Blatini" class="option"> 
-                    <input id="Blatini" type="radio" name="highscore" class="text-opt">
+                    <input id="Blatini" value ="blatini" type="radio" name="highscore" class="text-opt"
+                    onchange="checkChoose(this)">
                     Blatini
                 </label>
         
@@ -118,22 +126,26 @@
             <section class= "answer answer3">
     
                 <label for="opt1" class="option"> 
-                    <input id="opt1" type="radio" name="goals" class="text-opt">
+                    <input id="opt1" value ="15 goals" type="radio" name="goals" class="text-opt"
+                    onchange="checkChoose(this)">
                     15 goals
                 </label>
         
                 <label for="opt2" class="option"> 
-                    <input id="opt2" type="radio" name="goals" class="text-opt">
+                    <input id="opt2" value ="14 goals" type="radio" name="goals" class="text-opt"
+                    onchange="checkChoose(this)">
                     14 goals
                 </label>
         
                 <label for="opt3" class="option"> 
-                    <input id="opt3" type="radio" name="goals" class="text-opt">
+                    <input id="opt3" value ="13 goals" type="radio" name="goals" class="text-opt correct"
+                    onchange="checkChoose(this)">
                     13 goals
                 </label>
         
                 <label for="opt4" class="option"> 
-                    <input id="opt4" type="radio" name="goals" class="text-opt">
+                    <input id="opt4" value= "10goals" type="radio" name="goals" class="text-opt"
+                    onchange="checkChoose(this)">
                     10 goals
                 </label>
         
@@ -150,22 +162,26 @@
             <section class= "answer answer4">
     
                 <label for="spain" class="option"> 
-                    <input id="spain" type="radio" name="championships" class="text-opt">
+                    <input id="spain" value="spain" type="radio" name="championships" class="text-opt correct"
+                    onchange="checkChoose(this)">
                     spain
                 </label>
         
                 <label for="portugal" class="option"> 
-                    <input id="portugal" type="radio" name="championships" class="text-opt">
+                    <input id="portugal" value="portugal" type="radio" name="championships" class="text-opt"
+                    onchange="checkChoose(this)">
                     portugal
                 </label>
         
                 <label for="england" class="option"> 
-                    <input id="england" type="radio" name="championships" class="text-opt">
+                    <input id="england" value="england" type="radio" name="championships" class="text-opt"
+                    onchange="checkChoose(this)">
                     england
                 </label>
         
                 <label for="germany" class="option"> 
-                    <input id="germany" type="radio" name="championships" class="text-opt">
+                    <input id="germany" value="germany" type="radio" name="championships" class="text-opt"
+                    onchange="checkChoose(this)">
                     germany
                 </label>
         
@@ -182,22 +198,26 @@
             <section class= "answer answer5">
     
                 <label for="once" class="option"> 
-                    <input id="once" type="radio" name="highwin" class="text-opt">
+                    <input id="once" value="once" type="radio" name="highwin" class="text-opt"
+                    onchange="checkChoose(this)">
                     once
                 </label>
         
                 <label for="twice" class="option"> 
-                    <input id="twice" type="radio" name="highwin" class="text-opt">
+                    <input id="twice" value="twice" type="radio" name="highwin" class="text-opt"
+                    onchange="checkChoose(this)">
                     twice
                 </label>
         
-                <label for="three" class="option"> 
-                    <input id="three" type="radio" name="highwin" class="text-opt">
+                <label for="three3" class="option"> 
+                    <input id="three3" value="three" type="radio" name="highwin" class="text-opt correct"
+                    onchange="checkChoose(this)">
                     three
                 </label>
         
-                <label for="four" class="option"> 
-                    <input id="four" type="radio" name="highwin" class="text-opt">
+                <label for="four1" class="option"> 
+                    <input id="four1" value="four" type="radio" name="highwin" class="text-opt"
+                    onchange="checkChoose(this)">
                     four
                 </label>
         
@@ -214,23 +234,27 @@
     
             <section class= "answer answer6">
     
-                <label for="gremany" class="option"> 
-                    <input id="germany" type="radio" name="last" class="text-opt">
+                <label for="gremanya" class="option"> 
+                    <input id="gremanya" value="germany" type="radio" name="last" class="text-opt"
+                    onchange="checkChoose(this)">
                     germany
                 </label>
         
                 <label for="italy" class="option"> 
-                    <input id="italy" type="radio" name="last" class="text-opt">
+                    <input id="italy" value="italy" type="radio" name="last" class="text-opt"
+                    onchange="checkChoose(this)">
                     italy
                 </label>
         
-                <label for="portugal" class="option"> 
-                    <input id="portugal" type="radio" name="last" class="text-opt">
+                <label for="portugal1" class="option"> 
+                    <input id="portugal1" value="portugal" type="radio" name="last" class="text-opt correct"
+                    onchange="checkChoose(this)">
                     portugal
                 </label>
         
-                <label for="england" class="option"> 
-                    <input id="england" type="radio" name="last" class="text-opt">
+                <label for="england1" class="option"> 
+                    <input id="england1" value="england" type="radio" name="last" class="text-opt"
+                    onchange="checkChoose(this)">
                     england
                 </label>
         
@@ -247,23 +271,27 @@
     
             <section class= "answer answer7">
     
-                <label for="gremany" class="option"> 
-                    <input id="germany" type="radio" name="played" class="text-opt">
+                <label for="gremanyaa" class="option"> 
+                    <input id="gremanyaa" value="germany" type="radio" name="played" class="text-opt"
+                    onchange="checkChoose(this)">
                     germany
                 </label>
         
-                <label for="italy" class="option"> 
-                    <input id="italy" type="radio" name="played" class="text-opt">
+                <label for="italy1" class="option"> 
+                    <input id="italy1" value="italy" type="radio" name="played" class="text-opt"
+                    onchange="checkChoose(this)">
                     italy
                 </label>
         
                 <label for="france" class="option"> 
-                    <input id="france" type="radio" name="played" class="text-opt">
+                    <input id="france" value="france" type="radio" name="played" class="text-opt correct"
+                    onchange="checkChoose(this)">
                     france
                 </label>
         
-                <label for="england" class="option"> 
-                    <input id="england" type="radio" name="played" class="text-opt">
+                <label for="england2" class="option"> 
+                    <input id="england2" value="england" type="radio" name="played" class="text-opt"
+                    onchange="checkChoose(this)">
                     england
                 </label>
         
@@ -279,23 +307,27 @@
     
             <section class= "answer answer8">
     
-                <label for="gremany" class="option"> 
-                    <input id="germany" type="radio" name="w2008" class="text-opt">
+                <label for="gremanys" class="option"> 
+                    <input id="gremanys" value="germany" type="radio" name="w2008" class="text-opt"
+                    onchange="checkChoose(this)">
                     germany
                 </label>
         
-                <label for="italy" class="option"> 
-                    <input id="italy" type="radio" name="w2008" class="text-opt">
+                <label for="italy2" class="option"> 
+                    <input id="italy2" value="italy" type="radio" name="w2008" class="text-opt"
+                    onchange="checkChoose(this)">
                     italy
                 </label>
         
-                <label for="france" class="option"> 
-                    <input id="france" type="radio" name="w2008" class="text-opt">
+                <label for="france1" class="option"> 
+                    <input id="france1" value="france" type="radio" name="w2008" class="text-opt"
+                    onchange="checkChoose(this)">
                     france
                 </label>
         
-                <label for="spain" class="option"> 
-                    <input id="spain" type="radio" name="w2008" class="text-opt">
+                <label for="spain1" class="option"> 
+                    <input id="spain1" value="spain" type="radio" name="w2008" class="text-opt correct"
+                    onchange="checkChoose(this)">
                     spain
                 </label>
         
@@ -311,23 +343,27 @@
     
             <section class= "answer answer9">
     
-                <label for="gremany" class="option"> 
-                    <input id="germany" type="radio" name="w2012" class="text-opt">
+                <label for="gremanye" class="option"> 
+                    <input id="gremanye" value="germany" type="radio" name="w2012" class="text-opt"
+                    onchange="checkChoose(this)">
                     germany
                 </label>
         
-                <label for="italy" class="option"> 
-                    <input id="italy" type="radio" name="w2012" class="text-opt">
+                <label for="italy3" class="option"> 
+                    <input id="italy3" value="italy" type="radio" name="w2012" class="text-opt"
+                    onchange="checkChoose(this)">
                     italy
                 </label>
         
-                <label for="france" class="option"> 
-                    <input id="france" type="radio" name="w2012" class="text-opt">
+                <label for="france2" class="option"> 
+                    <input id="france2" value="france" type="radio" name="w2012" class="text-opt"
+                    onchange="checkChoose(this)">
                     france
                 </label>
         
-                <label for="spain" class="option"> 
-                    <input id="spain" type="radio" name="w2012" class="text-opt">
+                <label for="spain2" class="option"> 
+                    <input id="spain2" value="spain" type="radio" name="w2012" class="text-opt correct"
+                    onchange="checkChoose(this)">
                     spain
                 </label>
         
@@ -343,23 +379,27 @@
     
             <section class= "answer answer10">
     
-                <label for="gremany" class="option"> 
-                    <input id="germany" type="radio" name="w2004" class="text-opt">
+                <label for="gremanyee" class="option"> 
+                    <input id="gremanyee" value="germany" type="radio" name="w2004" class="text-opt"
+                    onchange="checkChoose(this)">
                     germany
                 </label>
         
-                <label for="geece" class="option"> 
-                    <input id="greece" type="radio" name="w2004" class="text-opt">
+                <label for="greece" class="option"> 
+                    <input id="greece"  value="greece" type="radio" name="w2004" class="text-opt correct"
+                    onchange="checkChoose(this)">
                     greece
                 </label>
         
-                <label for="france" class="option"> 
-                    <input id="france" type="radio" name="w2004" class="text-opt">
+                <label for="france3" class="option"> 
+                    <input id="france3" value="france" type="radio" name="w2004" class="text-opt"
+                    onchange="checkChoose(this)">
                     france
                 </label>
         
-                <label for="spain" class="option"> 
-                    <input id="spain" type="radio" name="w2004" class="text-opt">
+                <label for="spain3" class="option"> 
+                    <input id="spain3" value="spain" type="radio" name="w2004" class="text-opt"
+                    onchange="checkChoose(this)">
                     spain
                 </label>
         
@@ -369,15 +409,35 @@
 
         <section class="bar">
             <button class="next-question">Next</button>
-
-            <p class="where-step"> 1/10</p>
+            <img src="./resources/UEFA-EURO-2020-removebg-preview.png" alt="logo"  class= "logo">
+            <p class="where-step steps" > 1/10</p>
         </section>
 
 
     </section>
 
 
+    <section class="result-page">
 
+        <p class="score-app">Congratulations</p>
+
+        <div class="your-score">
+            <p class="score-text"> Your score:</p>
+            <p class="steps" id="final-score" > 0/10</p>
+        </div>
+
+        <section class="show-highscore">
+
+            <div class="first-score">
+                <p class="first-one">nizar</p>
+                <p class="his-score">0/10</p>
+            </div>
+
+        </section>
+
+        <img src="./resources/UEFA-EURO-2020-removebg-preview.png" alt="logo"  class= "logo1">
+
+    </section>
 
 
     <script src="script.js"></script>
