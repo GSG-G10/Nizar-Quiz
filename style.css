@@ -20,7 +20,7 @@ body {
 
 .welcome-page, 
 .login-page,
-.q1 {
+.questions {
     display: flex;
     width: 1024px;
     flex-direction: column;
@@ -33,12 +33,12 @@ body {
 }
 
 
-.welcome-page {
-    display: none;
-}
 .login-page {
     display: none;
+}
 
+.questions {
+    display: none;
 }
 
 .title-app {
@@ -83,7 +83,7 @@ body {
     padding: 10px;
 }
 
-.answers {
+.answer {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -103,8 +103,9 @@ body {
 
 }
 
-.question1{
-    font-size: 1.4em;
+.question{
+    font-size: 1.3em;
+    margin-bottom: 70px;
 }
 
 .bar {
@@ -116,7 +117,7 @@ body {
 
 }
 
-.step,
+.where-step,
 .next-question {
     padding: 10px 15px 10px 15px;
     background-color: #016473;
@@ -130,4 +131,49 @@ body {
     color: #E1560B;
     border: 3px solid #E1560B;
     cursor: pointer;
+}
+
+.sec {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+
+.sec-two {
+    display: none;
+}
+
+.sec-three {
+    display: none;
+}
+
+.sec-four {
+    display: none;
+}
+
+.sec-five {
+    display: none;
+}
+
+.sec-six {
+    display: none;
+}
+
+.sec-seven {
+    display: none;
+}
+
+.sec-eight {
+    display: none;
+}
+
+.sec-nine {
+    display: none;
+}
+
+.sec-ten {
+    display: none;
 }
