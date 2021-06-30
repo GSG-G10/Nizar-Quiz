@@ -20,7 +20,8 @@ body {
 
 .welcome-page, 
 .login-page,
-.questions {
+.questions,
+.result-page {
     display: flex;
     width: 1024px;
     flex-direction: column;
@@ -33,6 +34,16 @@ body {
 }
 
 
+
+.logo {
+    max-width: 150px;
+    height: auto;
+}
+.logo1 {
+    max-width: 100px;
+    height: auto;
+}
+
 .login-page {
     display: none;
 }
@@ -40,8 +51,13 @@ body {
 .questions {
     display: none;
 }
+.result-page {
+    display: none;
+}
 
-.title-app {
+
+.title-app,
+.score-app{
     font-size: 2em;
     padding-bottom: 7.5px;
     border-bottom: 3px solid #E1560B;
@@ -57,7 +73,8 @@ body {
 
 .start-play,
 .player-name,
-.next {
+.next,
+.play-Again {
     background-color: #FFE1D0;
     border: 3px solid #E1560B;
     border-radius: 20px;
@@ -117,7 +134,7 @@ body {
 
 }
 
-.where-step,
+.steps,
 .next-question {
     padding: 10px 15px 10px 15px;
     background-color: #016473;
@@ -176,4 +193,40 @@ body {
 
 .sec-ten {
     display: none;
+}
+
+
+.your-score {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 300px;
+    align-items: center;
+}
+
+.score-text {
+    font-size: 1.4em;
+    color: #016473;
+}
+
+.show-highscore {
+    height: 200px;
+    width: 250px;
+    background-color: #FFE1D0;
+    border: 3px solid #E1560B;
+}
+
+.first-score {
+    margin-top: 25px;
+    width: 250px;
+    display: flex;
+    justify-content: space-around;
+    color:#E1560B;
+
+}
+
+.first-one,
+.his-score {
+    font-size: 1em;
+
 }
